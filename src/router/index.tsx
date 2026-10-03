@@ -1,10 +1,8 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  Outlet,
   Route,
 } from "react-router";
-import Navbar from "../components/Navbar";
 import HomePage from "../pages";
 import AboutPage from "../pages/About";
 import ContactPage from "../pages/Contact";
