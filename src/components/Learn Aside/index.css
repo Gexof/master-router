@@ -1,0 +1,32 @@
+.nav-link {
+  display: block;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ca3af;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-link:hover {
+  padding: 14px 18px;
+  border-radius: 12px;
+  background-color: #252a33;
+  color: #ffffff;
+}
+
+.nav-link.active {
+  padding: 14px 18px;
+  border-radius: 12px;
+  background-color: #26333c;
+  color: #58c4dc;
+  font-weight: 600;
+}
+
+.nav-link.active:hover {
+  background-color: #2b3a44;
+  color: #58c4dc;
+}
