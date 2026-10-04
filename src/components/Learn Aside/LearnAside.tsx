@@ -4,7 +4,7 @@ import "./index.css";
 const LearnAside = () => {
   return (
     <aside className="w-full max-w-xs px-4 py-8">
-      <h2 className="text-gray-400 font-medium mb-3">GET STARTED</h2>
+      <h2 className="text-gray-400 font-medium mb-3 ml-4">GET STARTED</h2>
       <nav>
         <ul className="flex flex-col gap-1">
           <li>
