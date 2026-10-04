@@ -7,15 +7,28 @@ import HomePage from "../pages";
 import AboutPage from "../pages/About";
 import ContactPage from "../pages/Contact";
 import RootLayout from "../pages/Layout";
+import QuickStartPage from "../pages/learn";
+import LearnLayout from "../pages/learn/Layout";
+import ThinkingInReact from "../pages/learn/ThinkingInReact";
 
 const router = createBrowserRouter(
-  createRoutesFromElements([
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<HomePage />} />
-      <Route path="contact" element={<ContactPage />} />
-      <Route path="about" element={<AboutPage />} />
-    </Route>,
-  ]),
+  createRoutesFromElements(
+    <>
+      {/* Root Layout */}
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="about" element={<AboutPage />} />
+      </Route>
+
+      {/* Learn Layout */}
+
+      <Route path="/learn" element={<LearnLayout />}>
+        <Route index element={<QuickStartPage />} />
+        <Route path="thinking-in-react" element={<ThinkingInReact />} />
+      </Route>
+    </>,
+  ),
 );
 
 export default router;
