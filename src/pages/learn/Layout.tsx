@@ -6,7 +6,13 @@ const LearnLayout = () => {
   return (
     <>
       <Navbar />
-      <LearnAside />
+      <main className="flex my-16">
+        <LearnAside />
+
+        <section className="flex-1 mx-16">
+          <Outlet />
+        </section>
+      </main>
     </>
   );
 };

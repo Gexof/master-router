@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
+body {
+  background-color: #23272f;
+}
+
 nav .active {
-  color: #58c4dc;
-  background-color: #136c80;
   padding: 6px 10px;
   border-radius: 40px;
   font-size: 15px;
   line-height: 1.5;
   color: #61dafb;
-  background-color: #1e293b;
+  background-color: #283541;
   font-weight: 600;
 }
